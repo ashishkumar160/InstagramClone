@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by ashish on 25/3/18.
  */
@@ -19,7 +21,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewHolder
 
     public class FeedViewHolder extends RecyclerView.ViewHolder {
         public TextView namefeedTextView, locationfeedTextView, likesTextView, commentTextView, daysTextView;
-        public ImageView profileImageView, photoImageView;
+        public CircleImageView profileImageView;
+        public ImageView photoImageView;
 
         public FeedViewHolder(View view) {
             super(view);
@@ -47,8 +50,8 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.FeedViewHolder
     @Override
     public void onBindViewHolder(FeedViewHolder holder, int position) {
         Feed feed = feedList.get(position);
-        holder.photoImageView.setImageResource(R.drawable.ditheringopt);
-        holder.profileImageView.setImageResource(R.mipmap.ic_launcher_foreground);
+        holder.photoImageView.setImageResource(feed.getPhotoUrl());
+        holder.profileImageView.setImageResource(R.drawable.photo);
         holder.daysTextView.setText(feed.getDays() + " DAYS AGO");
         holder.commentTextView.setText(feed.getCommentCount());
         holder.likesTextView.setText(feed.getLikes());

@@ -6,12 +6,13 @@ package com.apprensics.instagram;
 
 public class Story {
 
-    private String name, imageUrl;
+    private String name;
+    private int imageUrl;
 
     public Story() {
     }
 
-    public Story(String name, String imageUrl) {
+    public Story(String name, int imageUrl) {
         this.name = name;
         this.imageUrl = imageUrl;
     }
@@ -24,11 +25,11 @@ public class Story {
         this.name = name;
     }
 
-    public String getImageUrl() {
+    public int getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
+    public void setImageUrl(int imageUrl) {
         this.imageUrl = imageUrl;
     }
 }

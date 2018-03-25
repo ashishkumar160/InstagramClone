@@ -5,13 +5,13 @@ package com.apprensics.instagram;
  */
 
 public class Feed {
-    private String name, location, profileImageUrl, photoUrl, likes, commentCount, authorComment;
-    private int days;
+    private String name, location, profileImageUrl, likes, commentCount, authorComment;
+    private int days, photoUrl;
 
     public Feed() {
     }
 
-    public Feed(String name, String location, String profileImageUrl, String photoUrl, String likes, String commentCount, String authorComment, int days) {
+    public Feed(String name, String location, String profileImageUrl,int photoUrl, String likes, String commentCount, String authorComment, int days) {
         this.name = name;
         this.location = location;
         this.profileImageUrl = profileImageUrl;
@@ -46,11 +46,11 @@ public class Feed {
         this.profileImageUrl = profileImageUrl;
     }
 
-    public String getPhotoUrl() {
+    public int getPhotoUrl() {
         return photoUrl;
     }
 
-    public void setPhotoUrl(String photoUrl) {
+    public void setPhotoUrl(int photoUrl) {
         this.photoUrl = photoUrl;
     }
 

@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 /**
  * Created by ashish on 25/3/18.
  */
@@ -20,7 +22,7 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.StoriesV
 
     public class StoriesViewHolder extends RecyclerView.ViewHolder {
         public TextView name_text_view;
-        public ImageView person_image_view;
+        public CircleImageView person_image_view;
 
         public StoriesViewHolder(View view) {
             super(view);
@@ -43,7 +45,7 @@ public class StoriesAdapter extends RecyclerView.Adapter<StoriesAdapter.StoriesV
     @Override
     public void onBindViewHolder(StoriesViewHolder holder, int position) {
         Story story = storiesList.get(position);
-        holder.person_image_view.setImageResource(R.mipmap.ic_launcher_foreground);
+        holder.person_image_view.setImageResource(story.getImageUrl());
         holder.name_text_view.setText(story.getName());
     }
 

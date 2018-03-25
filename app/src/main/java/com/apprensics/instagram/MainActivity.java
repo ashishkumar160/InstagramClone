@@ -51,23 +51,16 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
         recyclerView1.setAdapter(mAdapter1);
 
-        stories.add(new Story("Ashish", "http://url.com"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
-        stories.add(new Story("HELLO", "URL"));
+        stories.add(new Story("You", R.drawable.photo));
+        stories.add(new Story("Dan Galpin", R.drawable.dan));
+        stories.add(new Story("Katherine Kuan", R.drawable.kat));
+        stories.add(new Story("Lyla Fujiwara", R.drawable.lyla));
+        stories.add(new Story("Reto Meier", R.drawable.reto));
 
-        feedList.add(new Feed("Ashish", "Gastronomica Kitchen & Bar", "URL", "URL", "257 likes", "View all 7 comments", "Ashish Sign", 3));
-        feedList.add(new Feed("Ashish", "Gastronomica Kitchen & Bar", "URL", "URL", "257 likes", "View all 7 comments", "Ashish Sign", 3));
-        feedList.add(new Feed("Ashish", "Gastronomica Kitchen & Bar", "URL", "URL", "257 likes", "View all 7 comments", "Ashish Sign", 3));
-        feedList.add(new Feed("Ashish", "Gastronomica Kitchen & Bar", "URL", "URL", "257 likes", "View all 7 comments", "Ashish Sign", 3));
-        feedList.add(new Feed("Ashish", "Gastronomica Kitchen & Bar", "URL", "URL", "257 likes", "View all 7 comments", "Ashish Sign", 3));
-
+        feedList.add(new Feed("Ashish Kumar", "Kailash Hills", "URL", R.drawable.birds, "257 likes", "View all 7 comments", "Ashish Sign", 3));
+        feedList.add(new Feed("Ashish Kumar", "Kailash Hills", "URL", R.drawable.ditheringopt, "58 likes", "View all 2 comments", "Ashish Sign", 3));
+        feedList.add(new Feed("Ashish Kumar", "Kailash Hills", "URL", R.drawable.eyes, "411 likes", "View all 11 comments", "Ashish Sign", 3));
+        feedList.add(new Feed("Ashish Kumar", "Kailash Hills", "URL", R.drawable.globe, "66 likes", "View all 2 comments", "Ashish Sign", 3));
 
 
         mAdapter1.notifyDataSetChanged();
