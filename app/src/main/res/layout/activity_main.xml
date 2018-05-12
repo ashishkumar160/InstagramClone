@@ -23,6 +23,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="Instagram"
+            android:textColor="@android:color/white"
             android:textAlignment="center"
             android:textSize="40sp"
             tools:layout_editor_absoluteX="147dp"
@@ -93,8 +94,6 @@
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        app:itemIconTint="#000000"
-        app:itemTextColor="@android:color/transparent"
         android:layout_gravity="start"
         app:menu="@menu/my_navigation_items" />
 
